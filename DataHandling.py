@@ -1441,3 +1441,114 @@ import pandas as pd
 # CHAPTER 9
 # Plotting and Visualization
 
+# Plotting and Visualization
+
+
+# import pandas as pd
+# import matplotlib.pyplot as plt 
+
+# x=[1,2,3,4,5,6,7,8,9,10]
+# ys=[i**2 for i in x]
+
+# yc=[i**3 for i in x]
+
+# plt.xlabel("Integers")
+# plt.ylabel("Exponent")
+# plt.title("Exponential Graphs")
+# plt.plot(x,ys,color="red",marker='D',linestyle="--",label="Squares")
+# plt.plot(x,yc,'bD--',label="Cubes")
+# plt.legend(loc="best")
+
+
+# plt.show()
+
+
+# ---------------------------------------------
+# Pyqs
+
+# s=3.1456
+# c='''This is a long string
+#   that spans multiple lines'''
+
+
+# fval = float(s)
+# print(c.count('\n') )
+
+
+# l=[1,2,0,4,6,5,2,1]
+
+# sum=0
+# for i in l:
+#     if i==5:
+#         sum+=i
+#         break
+#     else:
+#         sum+=i
+
+
+# print(sum)
+
+
+# arr = [1,2,8,9,3,4,7,5,10,6]
+# print(arr[2:5])
+# print(arr[-5:-1])
+# print(arr[::2])
+
+
+# arr = np.zeros((2,3))
+# print(arr.shape)
+
+# val=['foo','2',[4,2]]
+# val[2] = (5,4)
+# print(val)
+
+
+
+# left = pd.DataFrame({'key1':['foo','foo','bar'], 
+# 'key2':['one','two','one'],'lval':[1,2,3]})
+# right = pd.DataFrame({'key1':['foo','foo','bar',
+# 'bar'],'key2':['one','one','one','two'],
+# 'rval':[4,5,6,7]})
+
+# print(left.append(right))
+
+
+
+
+# l = ['Amazon', 'Amazing Amazon', 'Apple',
+# 'Microsoft', 'Apple is good for health', 'I like Microsoft']
+
+# dict={}
+
+# for i in l:
+#     wc=len(i.split())
+
+#     if wc in dict:
+#         dict[wc].append(i)
+#     else:
+#         dict[wc] = [i]
+
+# print(dict)
+
+
+
+# ---------------------------------
+
+# df = pd.DataFrame({'category': ['a', 'a', 'a', 'a','b', 'b', 'b', 'b'],
+#                    'data': np.random.randn(8),
+#                    'weights': np.random.rand(8)})
+
+# print(df)
+
+
+# grouped = df.groupby('category')
+
+# for i , j in grouped:
+#     print(i)
+#     print(j)
+# get_wavg = lambda g: np.average(g['data'], weights=g['weights'])
+
+
+# print(grouped.apply(get_wavg))
+
+
